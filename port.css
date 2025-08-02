@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to right, rgba(50, 50, 150, 1), rgba(1, 5, 40, 1));
+    color: rgba(255, 255, 255, .7);
+}
+
+body a{
+    color: #1e95c4;
+}
+
+body p{
+    font-size: 20px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    background-color: hwb(189 7% 24% / 0.702);
+    box-shadow: 0 0 15px rgba(100, 100, 255, 1);
+    position: static;
+}
+.top ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.top a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, .9);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.top a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(180, 70, 100, .2), 0 0 10px rgba(100, 30, 255, .2), 0 0 10px rgba(255, 0, 0, .9);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.home-cont{
+    padding: 30px;
+    margin-top: 160px;
+    font-family: sans-serif;
+}
+
+.home-cont h1{
+    font-size: 50px;
+    color: rgba(180, 180, 180, .9);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid rgba(0, 0, 0, .9);
+    text-shadow: 0 0 10px rgba(200, 200, 200, .9);
+    animation: typing 10s steps(22, end) infinite, blink 0.2s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from{ 
+        width:0;
+    }
+    to{
+        width: 22ch;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color:transparent;
+    }
+}
+
+.home-cont p{
+    font-size: 30px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.about h2{
+    font-family: monospace;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projects h2{
+    font-family: monospace;
+    font-size: 30px;
+    text-decoration: underline; 
+}
+
+.img-blog{
+    width: 200px;
+    height: 200px;
+}
+
+.projects{
+    margin-left: 30px;
+}
+
+.projects p{
+    font-size: 20px;
+}
+
+.contact{
+    margin-left: 30px;
+}
+
+.contact h2{
+    font-family: monospace;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.contact ul li{
+    list-style-type: lower-roman;
+}
+
+.blog{
+    margin-left: 30px;
+}
+
+.blog h2{
+    font-family: monospace;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.blog ul li{
+    list-style-type: lower-roman;
+}
+
+footer{
+    background-color:rgba(15, 27, 95, 0.685)
+}
